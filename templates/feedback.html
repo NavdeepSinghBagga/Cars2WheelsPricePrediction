@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Resale Price Predictor</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='car-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class='heading_first'>Cars to Wheels </span><span class="heading_second">Resale Price Predictor</span></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div>
+
+        <!-- Prediction Area -->
+        <div class="prediction-area">
+
+            <!-- Banner - 1 -->
+            <div class='banner-left'>
+
+                <div class="slider-frame">
+                    <div class="slide-images-up">
+
+                        <!-- Image-1 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='1.png') }}" >
+                        </div>
+                        <!-- Image-2 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='2.png') }}" >
+                        </div>
+                        <!-- Image-3 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='3.png') }}" >
+                        </div>
+                        <!-- Image-4 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='4.png') }}" >
+                        </div>
+                        <!-- Image-5 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='5.png') }}" >
+                        </div>
+                        <!-- Image-6 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='6.png') }}" >
+                        </div>
+                        <!-- Image-7 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='7.png') }}" >
+                        </div>
+                        <!-- Image-8 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='8.png') }}" >
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Prediction Form -->
+            <div class='div2'>
+                <form action="{{ url_for('uploaded') }}" method="POST">
+                    <input type="text" name="Name" placeholder="Name" required="required"/><br>
+                    <textarea name="Feed_Back" placeholder="Your Feedback" rows="5" required="required"></textarea><br>
+                    <button id="sub" type="submit ">Submit</button>
+        	</form>
+            
+            </div>
+
+            <!-- Banner - 2 -->
+            <div class='banner-right'>
+
+                <div class="slider-frame">
+                    <div class="slide-images-down">
+
+                        <!-- Image-1 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='1.png') }}" >
+                        </div>
+                        <!-- Image-2 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='2.png') }}" >
+                        </div>
+                        <!-- Image-3 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='3.png') }}" >
+                        </div>
+                        <!-- Image-4 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='4.png') }}" >
+                        </div>
+                        <!-- Image-5 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='5.png') }}" >
+                        </div>
+                        <!-- Image-6 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='6.png') }}" >
+                        </div>
+                        <!-- Image-7 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='7.png') }}" >
+                        </div>
+                        <!-- Image-8 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='8.png') }}" >
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/"><i class="fab fa-github fa-lg contact-icon" style="font-size: 25px;"></i></a>
+               <a target="_blank" href="https://www.youtube.com/user/CarDekhoChannel"><i class="fab fa-youtube" style="color: red; font-size: 25px;"></i></i></a>
+           </div>
+           <p class='footer-description' style="font-size: 15px;">Made with ❤️ by Team.</p>
+       </div>
+       </br>
+    <ul class="buttons">
+        <li></li>
+        <li>
+            <form method="GET" action="/" id="form">
+            <input type="submit" class="special" value="Go Home" />
+            </form>
+        </li>
+        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+        <li><p>Your response will be stored into MongoDB database</p></li>
+        <li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+		<li>
+		    <form method="GET" action="/contact" id="form">
+		    <input type="submit" class="special" value="Contact Us" />
+        </form>
+		</li>
+    </ul>
+    
+       
+    </body>
+</html>

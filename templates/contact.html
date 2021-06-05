@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Contact</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+        <!-- <link rel="stylesheet" href="{{url_for('static',filename='noscript.css') }}" /> -->
+	</head>
+	<body class="contact is-preload">
+		<div id="page-wrapper">
+			<header class="special container">
+				<h2>Get In Touch</h2>
+			</header>
+			<!-- Main -->
+				<article id="main">
+
+					<!-- One -->
+						<section class="wrapper style1 special container medium">
+
+							<!-- Content -->
+								<div class="content">
+									<form action="{{ url_for('uploadedcont') }}" method="POST">
+										<div class="row gtr-50">
+											<div class="col-6 col-12-mobile">
+												<input type="text" name="Name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-mobile">
+												<input type="text" name="Email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="Subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="Message" placeholder="Message" rows="5"></textarea>
+											</div>
+											<div class="col-12">
+												<ul class="buttons">
+													<li><input type="submit" class="special" value="Send Message" /></li>
+													
+												</ul>
+											</div>
+										</div>
+									</form>
+                                    
+								</div>	
+							</section>
+				</article>
+
+
+		</div>
+		<ul class="buttons">
+			<li>
+				<form method="GET" action="/" id="form">
+				<input type="submit" class="special" value="Go Home" />
+				</form>
+			</li>
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			<li><p>Your response will be stored into MongoDB database</p></li>
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			<li>
+				<form method="GET" action="/feedback" id="form">
+				<input type="submit" class="special" value="Feedback" />
+			</form>
+			</li>
+		</ul>
+	</body>
+</html>
