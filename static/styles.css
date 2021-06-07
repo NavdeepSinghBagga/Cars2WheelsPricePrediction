@@ -138,7 +138,7 @@ body{
 	height: 100%;
 	position: relative;
 	animation-name: slide-animation-up;
-	animation-duration: 20s;
+	animation-duration: 10s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-timing-function: ease-out;
@@ -149,7 +149,7 @@ body{
 	height: 100%;
 	position: relative;
 	animation-name: slide-animation-down;
-	animation-duration: 20s;
+	animation-duration: 10s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-timing-function: ease-out;
